@@ -1,9 +1,13 @@
 package api
 
-import "net/http"
+import (
+	"net/http"
+
+	"local-file-indexer/internal/api/respond"
+)
 
 func test(w http.ResponseWriter, r *http.Request) {
-	writeJSON(w, http.StatusOK, map[string]string{
+	respond.JSON(w, http.StatusOK, map[string]string{
 		"message": "test",
 	})
 }
