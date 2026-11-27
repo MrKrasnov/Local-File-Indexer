@@ -1,0 +1,83 @@
+{
+  "info": {
+    "_postman_id": "8f0c289b-f70d-47b2-a631-32f992b87f0a",
+    "name": "Local-File-Indexer",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "20545297"
+  },
+  "item": [
+    {
+      "name": "scan",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/scan?path=/Users/username/Documents/temp",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "scan"
+          ],
+          "query": [
+            {
+              "key": "path",
+              "value": "/Users/username/Documents/temp"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/test",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "test"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/files?keyword=2025-06-01T11&limit=100",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "files"
+          ],
+          "query": [
+            {
+              "key": "keyword",
+              "value": "2025-06-01T11"
+            },
+            {
+              "key": "limit",
+              "value": "100"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
